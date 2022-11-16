@@ -9,6 +9,10 @@ app.use(express.json());
 
 app.use(express.static('dist'));
 
+app.get('', (req, res) => {
+    res.sendFile(__dirname + '/index.html')
+})
+
 app.get("/graph", async (req, res) => {
     const dir = "../assets/data"
     randomFile(dir, async (err, file) => {
