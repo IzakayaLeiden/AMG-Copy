@@ -7,10 +7,10 @@ const app = express();
 
 app.use(express.json());
 
-app.use(express.static('dist'));
+app.use(express.static('public'));
 
 app.get('', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/public/index.html')
 })
 
 app.get("/graph", async (req, res) => {
