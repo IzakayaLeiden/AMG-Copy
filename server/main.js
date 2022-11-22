@@ -2,6 +2,7 @@ const fs = require("fs/promises");
 const express = require("express");
 const randomFile = require("select-random-file");
 const h = require('./helper_main.js')
+const port = process.env.PORT || 3000
 
 const app = express();
 
