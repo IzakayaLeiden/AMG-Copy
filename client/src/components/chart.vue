@@ -55,7 +55,7 @@ export default {
   methods: {
     async getData() {
         try {
-            let response = await axios.get('http://localhost:3000/graph');
+            let response = await axios.get('https://git.heroku.com/amgqubeat.git/graph');
             let data = response.data;
             // this.x = data['x'];
             // this.y = data['y'];
